@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import yfinance as yf
 
-df = quandl.get("BCHAIN/MKPRU", api_key="YOUR_KEY").reset_index()   #your quandl api key
+df = quandl.get("BCHAIN/MKPRU", api_key="veu3p-4jnmTcfDVF9SuH").reset_index()   #your quandl api key
 
 btcdata = yf.download(tickers='BTC-USD', period="1d", interval="1m")["Close"]
 lastprice = btcdata.iloc[-1]
